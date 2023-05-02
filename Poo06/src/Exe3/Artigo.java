@@ -35,4 +35,3 @@ public class Artigo {
         this.autores = autores;
     }
 }
-

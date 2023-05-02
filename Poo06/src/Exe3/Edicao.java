@@ -14,7 +14,7 @@ public class Edicao {
         this.volume = volume;
         this.dataEdicao = dataEdicao;
         this.tiragem = tiragem;
-        this.artigos = new ArrayList<>();
+        this.artigos = new ArrayList<Artigo>();
     }
 
     public int getNumero() {
@@ -56,9 +56,4 @@ public class Edicao {
     public ArrayList<Artigo> getArtigos() {
         return artigos;
     }
-
-    public void setArtigos(ArrayList<Artigo> artigos) {
-        this.artigos = artigos;
-    }
 }
-

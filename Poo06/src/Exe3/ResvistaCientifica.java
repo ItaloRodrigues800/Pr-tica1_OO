@@ -1,25 +1,17 @@
 package Exe3;
 
-import java.util.ArrayList;
-
-public class ResvistaCientifica {
+public class RevistaCientifica {
     private String titulo;
     private long issn;
-    private String periodocidade;
-    private ArrayList<Edicao> edicoes;
+    private String periodicidade;
+    private Edicao edicao;
 
-    public ResvistaCientifica(String titulo, long issn, String periodocidade) {
+    public RevistaCientifica(String titulo, long issn, String periodicidade) {
         this.titulo = titulo;
         this.issn = issn;
-        this.periodocidade = periodocidade;
-        this.edicoes = new ArrayList<>();
+        this.periodicidade = periodicidade;
     }
 
-    public void adicionarEdicao(Edicao edicao) {
-        this.edicoes.add(edicao);
-    }
-
-    // Getters e Setters
     public String getTitulo() {
         return titulo;
     }
@@ -36,19 +28,19 @@ public class ResvistaCientifica {
         this.issn = issn;
     }
 
-    public String getPeriodocidade() {
-        return periodocidade;
+    public String getPeriodicidade() {
+        return periodicidade;
     }
 
-    public void setPeriodocidade(String periodocidade) {
-        this.periodocidade = periodocidade;
+    public void setPeriodicidade(String periodicidade) {
+        this.periodicidade = periodicidade;
     }
 
-    public ArrayList<Edicao> getEdicoes() {
-        return edicoes;
+    public void adicionaEdicao(Edicao edicao) {
+        this.edicao = edicao;
     }
 
-    public void setEdicoes(ArrayList<Edicao> edicoes) {
-        this.edicoes = edicoes;
+    public Edicao getEdicao() {
+        return edicao;
     }
 }
